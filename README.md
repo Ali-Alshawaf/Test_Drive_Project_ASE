@@ -24,9 +24,7 @@ The Test Drive Management System is a web application developed as part of an ad
 The system follows a Model-View-Controller (MVC) architecture, which separates the application into three interconnected components: Models (data layer), Views (presentation layer), and Controllers (business logic layer). This architecture ensures maintainability, extensibility, and reusability of the codebase.
 
 
-<p align="center">
-<img src="https://github.com/user-attachments/assets/dadeedba-0734-4b86-b39d-d0ffbc12bb91" width=50% height=50%>
-</p>
+
 
 
 **Database Design:**

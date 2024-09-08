@@ -1,4 +1,4 @@
-**Project Description: Test Drive Management System**
+# Project Description: Test Drive Management System
 
 **Introduction:**
 The Test Drive Management System is a web application developed as part of an advanced software engineering course. The system facilitates two primary roles: Admin and Customer. The Admin role involves managing the application by adding, editing, and deleting car listings, while the Customer role allows users to book cars for test drives.
@@ -36,10 +36,10 @@ Bootstrap is used to design the user interface, providing a responsive and visua
 **Conclusion:**
 The Test Drive Management System offers a user-friendly platform for both Admins and Customers to interact with the application seamlessly. The system showcases the application of advanced software engineering principles in developing a robust and efficient web application for managing test drive appointments.
 
+---
 
 
-
-**Use Case**
+## Use Case
 
 
 
@@ -48,29 +48,29 @@ The Test Drive Management System offers a user-friendly platform for both Admins
 
 
 
+---
 
-
-**Sequence Diagram**
+## Sequence Diagram
 
 
 
 ![image](https://github.com/user-attachments/assets/f7f70ddd-d2d0-4def-a050-8353586f83d8)
 
 
+---
 
 
-
-**Process Diagram**
+## Process Diagram
 
 
 
 ![image](https://github.com/user-attachments/assets/8e110c31-6794-4106-a1b7-c1479578e9b0)
 
 
+---
 
 
-
-**Class Diagram**
+## Class Diagram
 
 
 
@@ -79,17 +79,17 @@ The Test Drive Management System offers a user-friendly platform for both Admins
 
 ![image](https://github.com/user-attachments/assets/b98e5e49-66fa-4118-bebf-56527906f66e)
 
+---
 
-
-**ERD**
+## ERD
 
 
 
 ![6](https://github.com/user-attachments/assets/67479115-c8f0-43e4-af79-2db7c7e95b5e)
 
+---
 
-
-**Admin pages**
+## Admin pages
 
 
 
@@ -97,9 +97,9 @@ The Test Drive Management System offers a user-friendly platform for both Admins
 
 ![localhost_44354_Cars](https://github.com/user-attachments/assets/06d9a59a-b81c-426c-bad7-83357b9042cc)
 
+---
 
-
-**Customer Pages**
+## Customer Pages
 
 
 

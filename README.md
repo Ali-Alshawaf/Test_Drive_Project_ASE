@@ -25,7 +25,7 @@ The system follows a Model-View-Controller (MVC) architecture, which separates t
 
 
 
-<img src="https://github.com/user-attachments/assets/dadeedba-0734-4b86-b39d-d0ffbc12bb91" width=50% height=50%>
+<center><img src="https://github.com/user-attachments/assets/dadeedba-0734-4b86-b39d-d0ffbc12bb91" width=50% height=50%></center>
 
 **Database Design:**
 The database design includes tables for cars, users, bookings, and Role of users. Relationships are established between these entities to ensure data integrity and efficient data retrieval.

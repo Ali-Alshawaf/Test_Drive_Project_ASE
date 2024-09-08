@@ -44,7 +44,7 @@ The Test Drive Management System offers a user-friendly platform for both Admins
 
 
 
-<img src="https://github.com/user-attachments/assets/416d70ba-38b7-4a4d-a050-8a4cfbc8ab6c" width=50% height=50%>
+<img src="https://github.com/user-attachments/assets/416d70ba-38b7-4a4d-a050-8a4cfbc8ab6c" width=100% height=80%>
 
 
 
@@ -54,7 +54,9 @@ The Test Drive Management System offers a user-friendly platform for both Admins
 
 
 
-<img src="https://github.com/user-attachments/assets/f7f70ddd-d2d0-4def-a050-8353586f83d8" width=50% height=30%>
+<img src="https://github.com/user-attachments/assets/f7f70ddd-d2d0-4def-a050-8353586f83d8" width=50% height=10%>
+
+
 
 ---
 

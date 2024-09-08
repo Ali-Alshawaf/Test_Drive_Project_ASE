@@ -25,7 +25,7 @@ The system follows a Model-View-Controller (MVC) architecture, which separates t
 
 
 <p align="center">
-<center><img src="https://github.com/user-attachments/assets/dadeedba-0734-4b86-b39d-d0ffbc12bb91" width=50% height=50%></center>
+<img src="https://github.com/user-attachments/assets/dadeedba-0734-4b86-b39d-d0ffbc12bb91" width=50% height=50%>
 </p>
 
 

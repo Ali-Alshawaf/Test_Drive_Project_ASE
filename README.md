@@ -25,7 +25,6 @@ The system follows a Model-View-Controller (MVC) architecture, which separates t
 
 
 
-![image](https://github.com/user-attachments/assets/dadeedba-0734-4b86-b39d-d0ffbc12bb91)
 <img src="https://github.com/user-attachments/assets/dadeedba-0734-4b86-b39d-d0ffbc12bb91" width=50% height=50%>
 
 **Database Design:**
@@ -45,7 +44,7 @@ The Test Drive Management System offers a user-friendly platform for both Admins
 
 
 
-![image](https://github.com/user-attachments/assets/416d70ba-38b7-4a4d-a050-8a4cfbc8ab6c)
+<img src="https://github.com/user-attachments/assets/416d70ba-38b7-4a4d-a050-8a4cfbc8ab6c" width=50% height=50%>
 
 
 
@@ -55,8 +54,7 @@ The Test Drive Management System offers a user-friendly platform for both Admins
 
 
 
-![image](https://github.com/user-attachments/assets/f7f70ddd-d2d0-4def-a050-8353586f83d8)
-
+<img src="https://github.com/user-attachments/assets/f7f70ddd-d2d0-4def-a050-8353586f83d8" width=50% height=50%>
 
 ---
 
@@ -67,7 +65,7 @@ The Test Drive Management System offers a user-friendly platform for both Admins
 
 ![image](https://github.com/user-attachments/assets/8e110c31-6794-4106-a1b7-c1479578e9b0)
 
-
+<img src="https://github.com/user-attachments/assets/8e110c31-6794-4106-a1b7-c1479578e9b0" width=50% height=50%>
 ---
 
 
@@ -78,7 +76,7 @@ The Test Drive Management System offers a user-friendly platform for both Admins
 
 
 
-![image](https://github.com/user-attachments/assets/b98e5e49-66fa-4118-bebf-56527906f66e)
+<img src="https://github.com/user-attachments/assets/b98e5e49-66fa-4118-bebf-56527906f66e" width=50% height=50%>
 
 ---
 
@@ -86,7 +84,8 @@ The Test Drive Management System offers a user-friendly platform for both Admins
 
 
 
-![6](https://github.com/user-attachments/assets/67479115-c8f0-43e4-af79-2db7c7e95b5e)
+<img src="https://github.com/user-attachments/assets/67479115-c8f0-43e4-af79-2db7c7e95b5e" width=50% height=50%>
+
 
 ---
 

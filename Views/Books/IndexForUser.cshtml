@@ -1,0 +1,119 @@
+﻿@model IEnumerable<Test_Drive.Models.Book>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<style>
+    .con {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .card {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+        .card .card-body {
+            flex: 0;
+        }
+
+    .services .row {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    .services .col-lg-3,
+    .services .col-md-6 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .services .card {
+        margin-bottom: 30px;
+    }
+
+    .button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+    span {
+        color: #ffc451;
+    }
+
+    .services {
+        /* fallback for old browsers */
+        background: #000000;
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: -webkit-linear-gradient(to bottom right, #000000, #000000);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: linear-gradient(to bottom right, #000000, #000000);
+    }
+
+    .card-body {
+        background-color: #1F2021;
+        color: #ffffff;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+    }
+</style>
+
+
+
+<section id="Cars" class="services">
+    <div class="con" data-aos="fade-up" style="margin-top: 60px;">
+        <div class="section-title">
+            <h1><span>Cars</span></h1>
+        </div>
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <!-- Adjusted column width: col-lg-3 -->
+
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col">
+                                <h5 class="card-title">Car: @Html.DisplayFor(modelItem => item.Cars.Name)</h5>
+                                @if (item.Date < DateTime.Now)
+                                {
+                                    <p style="color: orangered">Unavailable</p>
+                                }
+                                else
+                                {
+                                    <p style="color: forestgreen">Available</p>
+                                }
+                                <p class="card-text">Date: @Html.DisplayFor(modelItem => item.Date)</p>
+                                <p class="card-text">Time: @Html.DisplayFor(modelItem => item.Time)</p>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="card-text">City: @Html.DisplayFor(modelItem => item.City)</p>
+                                    </div>
+                                    <div class="col">
+                                        <div class="text-end">
+                                            <a class="btn btn-primary" asp-action="Details" asp-route-id="@item.Id">Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section><!-- End Services Section -->

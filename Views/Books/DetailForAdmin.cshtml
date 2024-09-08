@@ -1,0 +1,164 @@
+﻿@model Test_Drive.Models.Book
+
+@{
+    ViewData["Title"] = "Details";
+}
+<style>
+    span {
+        color: #ffc451;
+    }
+
+    .card-body {
+        /* fallback for old browsers */
+        background: #000000;
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: -webkit-linear-gradient(to bottom right, #000000, #000000);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: linear-gradient(to bottom right, #000000, #000000);
+    }
+
+        .card-body dd,
+        .card-body dt {
+            color: #ffffff; /* Set the text color to white */
+        }
+</style>
+
+<div class="card-body p-4 p-md-5" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <div class="row">
+        <div class="col-md-6">
+            <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">
+                <span>Car Detail</span>
+            </h3>
+            <dl class="row">
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.Cars.Name)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Cars.Name)
+                </dd>
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.Cars.Model)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Cars.Model)
+                </dd>
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.Cars.Engine)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Cars.Engine)
+                </dd>
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.Cars.Hp)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Cars.Hp)
+                </dd>
+            </dl>
+
+            <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">
+                <span>Detail User request</span>
+            </h3>
+            <dl class="row">
+                <dt class="col-sm-4">
+                    Status
+                </dt>
+                <dd class="col-sm-8">
+
+                    @if (Model.Date < DateTime.Now)
+                    {
+                        <p style="color: orangered">Unavailable</p>
+                    }
+                    else
+                    {
+                        <p style="color: forestgreen">Available</p>
+                    }
+                </dd>
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.Users.Name)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Users.Name)
+                </dd>
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.City)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.City)
+                </dd>
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.Date)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Date)
+                </dd>
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.Time)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Time)
+                </dd>
+            </dl>
+        </div>
+        <div class="mt-4">
+            <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+            <a class="btn btn-danger delete-booking" data-id="@Model.Id">Delete booking</a>
+
+        </div>
+    </div>
+    <div class="col-md-6">
+        <img src="@Model.Cars.Image" alt="Car Image" class="img-fluid">
+    </div>
+</div>
+
+
+
+<!-- Add a script tag to handle the click event -->
+<script>
+    // Select all the buttons with the class delete-booking
+    var buttons = document.querySelectorAll(".delete-booking");
+
+    // Loop through the buttons and add a click listener
+    for (var i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener("click", function (e) {
+            // Prevent the default behavior of the link
+            e.preventDefault();
+
+            // Get the id of the booking from the data attribute
+            var id = this.dataset.id;
+
+            // Show the sweet alert dialog
+            swal({
+                title: "Are you sure?",
+                text: "Once deleted, you will not be able to recover this booking!",
+                icon: "warning",
+                buttons: true,
+                dangerMode: true,
+            })
+                .then((willDelete) => {
+                    if (willDelete) {
+                        // If the user confirms, make an AJAX call to the controller action
+                        $.ajax({
+                            url: "@Url.Action("DeleteBooking", "Books")",
+                            type: "POST",
+                            data: { id: id },
+                            success: function (response) {
+                                // If the response is successful, show a success message and reload the page
+                                swal("Deleted!", "Your booking has been deleted.", "success")
+                                    .then(() => {
+                                        window.location.href = "/Books/Index";
+                                    });
+                            },
+                            error: function (error) {
+                                // If the response is an error, show an error message
+                                swal("Oops!", "Something went wrong!", "error");
+                            }
+                        });
+                    } else {
+                        // If the user cancels, show a cancel message
+                        swal("Cancelled!", "Your booking is safe.", "info");
+                    }
+                });
+        });
+    }
+</script>

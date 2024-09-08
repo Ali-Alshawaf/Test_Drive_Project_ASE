@@ -1,0 +1,48 @@
+﻿@model Test_Drive.Models.Cars
+
+@{
+    ViewData["Title"] = "Details";
+}
+<style>
+    span {
+        color: #ffc451;
+    }
+
+    .card-body {
+        /* fallback for old browsers */
+        background: #000000;
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: -webkit-linear-gradient(to bottom right, #000000, #000000);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: linear-gradient(to bottom right, #000000, #000000);
+        color: #ffffff;
+    }
+
+</style>
+
+<div class="card-body p-4 p-md-5" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <div class="row">
+        <div class="col-md-6">
+            <h3 class="mb-4 pb-2 pb-md-0 mb-md-5"><span>Car Details</span></h3>
+            <dl class="row">
+                <dt class="col-sm-4">Name</dt>
+                <dd class="col-sm-8">@Model.Name</dd>
+                <dt class="col-sm-4">Model</dt>
+                <dd class="col-sm-8">@Model.Model</dd>
+                <dt class="col-sm-4">Engine</dt>
+                <dd class="col-sm-8">@Model.Engine</dd>
+                <dt class="col-sm-4">Horsepower</dt>
+                <dd class="col-sm-8">@Model.Hp</dd>
+            </dl>
+            <div class="mt-4">
+                <a asp-action="IndexForUser" class="btn btn-secondary">Back to List</a>
+                <a asp-action="Create" asp-controller="Books" asp-route-id="@Model.Id" class="btn btn-success">Test this Car</a>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <img src="@Model.Image" alt="Car Image" class="img-fluid">
+        </div>
+    </div>
+</div>
+
+

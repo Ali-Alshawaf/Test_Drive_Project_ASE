@@ -1,0 +1,152 @@
+﻿@model IEnumerable<Test_Drive.Models.Cars>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+@*<style>
+    .services .imag {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border: 1px solid #ebebeb;
+        transition: all ease-in-out 0.3s;
+        background: #fff;
+    }
+    .services .imag:hover {
+         border-color: #fff;
+         box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+         transform: translateY(-10px);
+    }
+    .imag {
+       
+    }
+    .image-container {
+        width: 100%;
+
+    }
+    .card-image {
+        width: 100%;
+        height: auto;
+    }
+    .ccontent {
+        padding: 10px;
+    }
+
+    .dropdown-toggle {
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        color: #333;
+    }
+
+    .dropdown-menu {
+        min-width: 150px;
+    }
+
+</style>*@
+
+<style>
+    .card {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+        .card .image-container {
+            flex: 1;
+        }
+
+        .card .card-img-top {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+
+        .card .card-body {
+            flex: 0;
+        }
+
+    .services .row {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    .services .col-lg-4,
+    .services .col-md-6 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .services .card {
+        margin-bottom: 30px;
+    }
+
+</style>
+
+
+<section id="hero" class="d-flex align-items-center justify-content-center">
+    <div class="container" data-aos="fade-up">
+
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+            <div class="col-xl-6 col-lg-8">
+                <h1>
+                    Car <span>managment</span>.
+                </h1>
+                <h2>
+                    Add, Edit and delete cars
+                </h2>
+            </div>
+        </div>
+    </div>
+</section><!-- End Hero -->
+<main id="main">
+
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+        <div class="container" data-aos="fade-up">
+            <div class="section-title">
+                <h1>
+                    <a asp-action="Create" class="btn btn-primary">
+                        <i class="fas fa-plus"></i>
+                        Add new car
+                    </a>
+                </h1>
+            </div>
+            <div class="row">
+                @foreach (var item in Model)
+                {
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card">
+                            <img src="@item.Image" class="card-img-top" alt="Car Image">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col">
+                                        <h5 class="card-title">@item.Name</h5>
+                                        <p class="card-text">@item.Model</p>
+                                    </div>
+                                    <div class="col-auto">
+                                        <a class="btn btn-secondary" asp-action="Details" asp-route-id="@item.Id">
+                                            <i class="fas fa-cog"></i> <!-- Settings icon -->
+                                            Setting
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </section><!-- End Services Section -->
+   
+
+
+</main><!-- End #main -->
+
+
+

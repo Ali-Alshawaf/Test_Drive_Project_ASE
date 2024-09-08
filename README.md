@@ -23,6 +23,10 @@ The Test Drive Management System is a web application developed as part of an ad
 **System Architecture:**
 The system follows a Model-View-Controller (MVC) architecture, which separates the application into three interconnected components: Models (data layer), Views (presentation layer), and Controllers (business logic layer). This architecture ensures maintainability, extensibility, and reusability of the codebase.
 
+
+
+![image](https://github.com/user-attachments/assets/dadeedba-0734-4b86-b39d-d0ffbc12bb91)
+
 **Database Design:**
 The database design includes tables for cars, users, bookings, and Role of users. Relationships are established between these entities to ensure data integrity and efficient data retrieval.
 
@@ -40,7 +44,8 @@ The Test Drive Management System offers a user-friendly platform for both Admins
 
 
 
-![image](https://github.com/user-attachments/assets/dadeedba-0734-4b86-b39d-d0ffbc12bb91)
+![image](https://github.com/user-attachments/assets/416d70ba-38b7-4a4d-a050-8a4cfbc8ab6c)
+
 
 
 
@@ -49,8 +54,8 @@ The Test Drive Management System offers a user-friendly platform for both Admins
 
 
 
+![image](https://github.com/user-attachments/assets/f7f70ddd-d2d0-4def-a050-8353586f83d8)
 
-![image](https://github.com/user-attachments/assets/416d70ba-38b7-4a4d-a050-8a4cfbc8ab6c)
 
 
 
@@ -59,8 +64,8 @@ The Test Drive Management System offers a user-friendly platform for both Admins
 
 
 
+![image](https://github.com/user-attachments/assets/8e110c31-6794-4106-a1b7-c1479578e9b0)
 
-![image](https://github.com/user-attachments/assets/f7f70ddd-d2d0-4def-a050-8353586f83d8)
 
 
 
@@ -70,7 +75,7 @@ The Test Drive Management System offers a user-friendly platform for both Admins
 
 
 
-![image](https://github.com/user-attachments/assets/8e110c31-6794-4106-a1b7-c1479578e9b0)
+
 
 ![image](https://github.com/user-attachments/assets/b98e5e49-66fa-4118-bebf-56527906f66e)
 

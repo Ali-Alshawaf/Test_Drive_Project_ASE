@@ -1,4 +1,4 @@
-# Project Description: Test Drive Management System
+# Test Drive Management System
 
 **Introduction:**
 The Test Drive Management System is a web application developed as part of an advanced software engineering course. The system facilitates two primary roles: Admin and Customer. The Admin role involves managing the application by adding, editing, and deleting car listings, while the Customer role allows users to book cars for test drives.
@@ -54,7 +54,7 @@ The Test Drive Management System offers a user-friendly platform for both Admins
 
 
 
-<img src="https://github.com/user-attachments/assets/f7f70ddd-d2d0-4def-a050-8353586f83d8" width=50% height=50%>
+<img src="https://github.com/user-attachments/assets/f7f70ddd-d2d0-4def-a050-8353586f83d8" width=50% height=30%>
 
 ---
 
@@ -63,9 +63,10 @@ The Test Drive Management System offers a user-friendly platform for both Admins
 
 
 
-![image](https://github.com/user-attachments/assets/8e110c31-6794-4106-a1b7-c1479578e9b0)
 
 <img src="https://github.com/user-attachments/assets/8e110c31-6794-4106-a1b7-c1479578e9b0" width=50% height=50%>
+
+
 ---
 
 

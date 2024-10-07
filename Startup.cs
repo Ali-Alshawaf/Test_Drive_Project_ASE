@@ -35,6 +35,7 @@ namespace Test_Drive
             services.AddDbContext<ODB>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("ODB")));
+            services.AddServerSideBlazor();
             services.AddControllersWithViews();
             services.AddDistributedMemoryCache();
             services.AddAuthorization(options =>
